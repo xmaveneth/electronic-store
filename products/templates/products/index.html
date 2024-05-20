@@ -1,0 +1,27 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link href="{% static 'vendor/css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section>
+        <!--    </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mt-5">Electronic Store</h1>
+                    <p>
+                        Добро пожаловать в Electronic Store – ваш надежный источник новейших моделей электроники. Мы предлагаем бесплатную доставку по всему миру, чтобы вы могли наслаждаться высококачественной техникой, где бы вы ни находились. Наш ассортимент включает в себя все, что вам нужно, от смартфонов и ноутбуков до аксессуаров и гаджетов для умного дома. Покупайте у нас и получайте современные технологии с уверенностью в их надежности и долговечности.
+                    </p>
+                    <button id="start-purchase-btn" type="button" class="btn btn-lg">
+                        <a id="start-purchase-link" href="{% url 'products:index' %}">
+                            Начать покупки
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
